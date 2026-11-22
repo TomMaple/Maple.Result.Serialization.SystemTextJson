@@ -1,4 +1,13 @@
 <Solution>
+  <Folder Name="/.github/scripts/">
+    <File Path=".github/scripts/changes.py" />
+    <File Path=".github/scripts/check_reference_docs.py" />
+    <File Path=".github/scripts/conventional_commit.py" />
+    <File Path=".github/scripts/filter_sarif.py" />
+    <File Path=".github/scripts/pin_reference_links.py" />
+    <File Path=".github/scripts/release_state.py" />
+    <File Path=".github/scripts/version.py" />
+  </Folder>
   <Folder Name="/.resources/">
     <File Path=".resources/icon.png" />
   </Folder>
@@ -6,6 +15,7 @@
     <File Path=".editorconfig" />
     <File Path=".gitattributes" />
     <File Path=".gitignore" />
+    <File Path="cliff.toml" />
     <File Path="Directory.Build.props" />
     <File Path="global.json" />
     <File Path="LICENSE" />
