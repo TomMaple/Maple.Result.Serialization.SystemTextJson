@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Maple.Result.Serialization.SystemTextJson</AssemblyName>
+    <RootNamespace>Maple.Results.Serialization.SystemTextJson</RootNamespace>
+
+    <!-- Marks the assembly as trimmable and turns on the trim, AOT and single-file analyzers. -->
+    <IsAotCompatible>true</IsAotCompatible>
+
+    <PackageId>Maple.Result.Serialization.SystemTextJson</PackageId>
+    <Title>Maple.Result.Serialization.SystemTextJson — System.Text.Json converters for Maple.Result</Title>
+    <Description>System.Text.Json converters that serialize and deserialize the Maple.Result types (Result, Result&lt;T&gt; and Error).</Description>
+    <Authors>Tom Maple</Authors>
+    <Copyright>Copyright (c) Tom Maple</Copyright>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>Result;Error;RFC-9457;Json;Serialization;SystemTextJson</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>https://github.com/TomMaple/Maple.Result.Serialization.SystemTextJson/releases</PackageReleaseNotes>
+
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+
+    <PackageProjectUrl>https://github.com/TomMaple/Maple.Result.Serialization.SystemTextJson</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TomMaple/Maple.Result.Serialization.SystemTextJson</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Maple.Result.Serialization.SystemTextJson.Tests.Unit" />
+  </ItemGroup>
+
+  <!-- 3.0.0-rc.1 until Maple.Result 3.0.0 is on nuget.org. -->
+  <ItemGroup>
+    <PackageReference Include="Maple.Result" Version="3.0.0-rc.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\.resources\icon.png" Pack="true" PackagePath="" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="" />
+    <!-- The package README for nuget.org (absolute links, no GitHub alerts); the README.md of the repository is for GitHub. -->
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>
