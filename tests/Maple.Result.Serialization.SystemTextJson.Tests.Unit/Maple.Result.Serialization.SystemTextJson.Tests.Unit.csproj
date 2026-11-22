@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>Maple.Results.Serialization.SystemTextJson.Tests.Unit</RootNamespace>
+        <TargetFramework>net10.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+
+        <!-- Run tests through Microsoft.Testing.Platform instead of VSTest -->
+        <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+        <TestingPlatformDotnetTestSupport>true</TestingPlatformDotnetTestSupport>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.12.0" />
+        <PackageReference Include="Shouldly" Version="4.3.0" />
+        <PackageReference Include="xunit.v3" Version="4.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Maple.Result.Serialization.SystemTextJson\Maple.Result.Serialization.SystemTextJson.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="Shouldly" />
+        <Using Include="Xunit" />
+    </ItemGroup>
+
+</Project>
