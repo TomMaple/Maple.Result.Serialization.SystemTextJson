@@ -49,8 +49,8 @@
       },
       "Maple.Result": {
         "type": "Transitive",
-        "resolved": "3.0.0-rc.1",
-        "contentHash": "sdZAE8FBbwNkoRJuuVJdqfi7SVzkgVpTQVL7Am6uqxAVKg4EB0lMj9tZ3Lt0GSgaxgmT4ft4gIVy56X4lulEYg=="
+        "resolved": "3.0.0-rc.2",
+        "contentHash": "Wbs5OtLooSZOwfCWqGDRKXw/W8bSvlpyLZ6tbWObKHACwRaVkHP21LFmUlsf5yujRqKFKffZlPNcbLW9GX682g=="
       },
       "Microsoft.ApplicationInsights": {
         "type": "Transitive",
@@ -201,7 +201,7 @@
       "maple.result.serialization.systemtextjson": {
         "type": "Project",
         "dependencies": {
-          "Maple.Result": "[3.0.0-rc.1, )"
+          "Maple.Result": "[3.0.0-rc.2, )"
         }
       }
     }
