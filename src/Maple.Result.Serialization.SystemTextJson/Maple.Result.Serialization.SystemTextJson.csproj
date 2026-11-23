@@ -42,9 +42,9 @@
     <InternalsVisibleTo Include="Maple.Result.Serialization.SystemTextJson.Tests.Unit" />
   </ItemGroup>
 
-  <!-- 3.0.0-rc.1 until Maple.Result 3.0.0 is on nuget.org. -->
+  <!-- A release candidate until Maple.Result 3.0.0 is on nuget.org. -->
   <ItemGroup>
-    <PackageReference Include="Maple.Result" Version="3.0.0-rc.1" />
+    <PackageReference Include="Maple.Result" Version="3.0.0-rc.2" />
   </ItemGroup>
 
   <ItemGroup>
