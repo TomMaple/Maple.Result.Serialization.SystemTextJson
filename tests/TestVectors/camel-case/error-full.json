@@ -1,0 +1,1 @@
+{"category":"NotFound","typeUri":"tag:example.com,2026:orders:not-found","title":"Order not found.","detail":"Order 42 does not exist.","instanceUri":"/orders/42","detailTemplated":{"templateId":"orders.notFound","parameters":{"id":42}},"errorDetails":[{"propertyPointer":"/orderId","detail":"Unknown order."}],"metadata":{"retryable":false,"limit":{"$type":"long","$value":100}}}

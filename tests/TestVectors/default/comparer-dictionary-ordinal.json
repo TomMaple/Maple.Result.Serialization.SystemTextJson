@@ -1,0 +1,1 @@
+{"TemplateId":"value","Parameters":{"value":{"$type":"dictionary<string,int>","$comparer":"ordinal","$value":{"a":1}}}}
