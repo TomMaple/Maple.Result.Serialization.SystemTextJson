@@ -1,0 +1,1 @@
+{"TemplateId":"value","Parameters":{"value":{"$type":"concurrentDictionary<string,int>","$value":{"a":1}}}}

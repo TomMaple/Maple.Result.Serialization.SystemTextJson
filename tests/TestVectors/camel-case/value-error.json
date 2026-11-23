@@ -1,0 +1,1 @@
+{"templateId":"value","parameters":{"value":{"$type":"error","$value":{"category":"NotFound","typeUri":"tag:example.com,2026:orders:not-found","title":"Order not found.","errorDetails":[],"metadata":{}}}}}
