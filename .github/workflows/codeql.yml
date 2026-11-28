@@ -79,7 +79,7 @@ jobs:
         dotnet-version: 10.0.x
 
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+      uses: github/codeql-action/init@1bd86f2fdb4b86187fa4059f16f31a3202acc9ea # v4.39.4
       with:
         languages: csharp
         build-mode: manual
@@ -89,7 +89,7 @@ jobs:
       run: dotnet build src/Maple.Result.Serialization.SystemTextJson/Maple.Result.Serialization.SystemTextJson.csproj --configuration Release
 
     - name: Perform CodeQL analysis
-      uses: github/codeql-action/analyze@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+      uses: github/codeql-action/analyze@1bd86f2fdb4b86187fa4059f16f31a3202acc9ea # v4.39.4
       with:
         category: "/language:csharp"
         output: ${{ env.SARIF_PATH }}
@@ -99,7 +99,7 @@ jobs:
       run: python3 -I .github/scripts/filter_sarif.py "${SARIF_PATH}/csharp.sarif"
 
     - name: Upload results
-      uses: github/codeql-action/upload-sarif@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+      uses: github/codeql-action/upload-sarif@1bd86f2fdb4b86187fa4059f16f31a3202acc9ea # v4.39.4
       with:
         sarif_file: ${{ env.SARIF_PATH }}/csharp.sarif
         category: "/language:csharp"
@@ -122,13 +122,13 @@ jobs:
         persist-credentials: false
 
     - name: Initialize CodeQL
-      uses: github/codeql-action/init@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+      uses: github/codeql-action/init@1bd86f2fdb4b86187fa4059f16f31a3202acc9ea # v4.39.4
       with:
         languages: actions
         build-mode: none
         queries: security-and-quality
 
     - name: Perform CodeQL analysis
-      uses: github/codeql-action/analyze@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+      uses: github/codeql-action/analyze@1bd86f2fdb4b86187fa4059f16f31a3202acc9ea # v4.39.4
       with:
         category: "/language:actions"
